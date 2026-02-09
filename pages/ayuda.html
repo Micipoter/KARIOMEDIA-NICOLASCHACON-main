@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/celulares.css">
+
+    <title>Ayuda</title>
+    <meta name="description" content="Modulo de ayuda y soporte al cliente" />
+    <meta name="author" content="Juan Felix y Nicolas Chacon" />
+</head>
+<body>
+    <input type="checkbox" name="logOut" id="logOut">
+    <header>
+        <nav class="tresQuintos">
+            <a href="./añadir.html"><i class="fa-solid fa-circle-plus orange"></i>Añadir</a>
+            <a href="./tabla.html"><i class="fa-solid fa-arrow-rotate-right orange"></i>Refrescar</a>
+            <a href="./eliminar.html"><i class="fa-solid fa-trash orange"></i>Eliminar</a>
+        </nav>
+
+        <label onclick="window.location.href='./tabla.html'">
+            <img class="logo" src="../media/kario sin kairo.svg" alt="logo">
+        </label>
+
+        <nav class="dosQuintos">
+            <a href="./reportar.html"><i class="fa-solid fa-bug orange"></i>Reportar</a>
+            <a href="./ayuda.html"><i class="fa-solid fa-circle-question orange"></i>Ayuda</a>
+            <a href="./servicios.html"><i class="fa-solid fa-circle-question orange"></i>Servicios</a>
+        </nav>
+
+        <div class="perfil">
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-bell"></i>
+            <label for="logOut"><img src="../media/pp.png" alt="imagen de foto de perfil de usuario"></label>
+        </div>
+    </header>
+
+    <main>
+        <h1>Centro de Ayuda</h1>
+
+        <div>
+            <div class="serchPanel">
+                <input type="text" placeholder="¿Como podemos ayudarte?">
+                <input type="button" value="Enviar">
+            </div>
+    
+            <div class="conteinertargetaAyuda">
+                <div class="targetaAyuda">
+                    <i class="fa-brands fa-youtube"></i>
+                    <h3>Tutoriales</h3>
+                    <p>Accede a nuestros tutoriales para que puedas entender las interesantes mecanicas de esta pagina web</p>
+                </div>
+                <div class="targetaAyuda">
+                    <i class="fa-solid fa-gear"></i>
+                    <h3>Ajustes</h3>
+                    <p>Personaliza tu cuenta, cambiar el color, los botones o el tema encuentra el estilo perfecto para ti</p>
+                </div>
+                <div class="targetaAyuda">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Crear</h3>
+                    <p>Averigua como crear nuevas, eliminarlas, o consultar su contenido. Tablas de la forma correcta sin errores</p>
+                </div>
+            </div>
+        </div>
+        
+        <p class="p_pregunta">¿Necesitas ayuda? Comunícate con nuestro servicio al cliente a través de los siguientes canales.</p>
+
+        <div class="contactarFormas">
+            <div class="divInput">
+                <p><i class="fa-solid fa-envelope orange"></i> <strong>Email:</strong></p>
+                <p>Campusland@gmail.com</p>
+            </div>
+
+            <div class="divInput">
+                <p><i class="fa-solid fa-phone orange"></i> <strong>Teléfono:</strong></p>
+                <p>123 456 7890</p>
+            </div>
+
+            <div class="divInput">
+                <p><i class="fa-solid fa-headset orange"></i> <strong>Horario de atención:</strong></p>
+                <p>Lunes a Viernes — 8:00 AM a 6:00 PM</p>
+            </div>
+
+            <div class="divInput">
+                <p><i class="fa-solid fa-location-dot orange"></i> <strong>Soporte presencial:</strong></p>
+                <p>CampusLands - Área Administrativa</p>
+            </div>
+        </div>
+
+        <h2>!Tu felicidad es nuestra prioridad, no te mates mas la cabeza!</h2>
+
+    </main>
+    <div class="logoutPanel">
+        <div class="infoPerfil">
+            <img src="../media/pp.png" alt="foto de perfil de usuario">
+            <div>
+                <h4>Pedro Gomez</h4>
+                <h3>Pedro Felipe Gomez Bonilla</h3 >
+            </div>
+        </div>
+
+        <div class="options">
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuraciones</a>
+            <a href="#"><i class="fa-solid fa-bell"></i>Notificaciones</a>
+            <hr>
+            <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i>Cambiar de cuenta</a>
+            <a href="#"><i class="fa-solid fa-moon"></i>Tema oscuro</a>
+        </div>
+
+        <div class="log">
+            <a href="../index.html" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar cesion</a>
+            <a href="#" class="btn"><i class="fa-solid fa-user-plus"></i>Añadir Cuenta</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/celulares.css">
+
+    <title>Reportar</title>
+    <meta name="description" content="Modulo de reporte de problemas del panel Kairo Media">
+</head>
+<body>
+    <input type="checkbox" name="logOut" id="logOut">
+    <header>
+        <nav class="tresQuintos">
+            <a href="./añadir.html">
+                <i class="fa-solid fa-circle-plus orange"></i>Añadir
+            </a>
+            <a href="./tabla.html">
+                <i class="fa-solid fa-arrow-rotate-right orange"></i>Refrescar
+            </a>
+            <a href="./eliminar.html">
+                <i class="fa-solid fa-trash orange"></i>Eliminar
+            </a>
+        </nav>
+
+        <label onclick="window.location.href='./tabla.html'">
+            <img class="logo" src="../media/kario sin kairo.svg" alt="logo de la empresa">
+        </label>
+
+        <nav class="dosQuintos">
+            <a href="./reportar.html">
+                <i class="fa-solid fa-bug orange"></i>Reportar
+            </a>
+            <a href="./ayuda.html">
+                <i class="fa-solid fa-circle-question orange"></i>Ayuda
+            </a>
+            <a href="./servicios.html"><i class="fa-solid fa-circle-question orange"></i>Servicios</a>
+        </nav>
+
+        <div class="perfil">
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-bell"></i>
+            <label for="logOut"><img src="../media/pp.png" alt="imagen de foto de perfil de usuario"></label>
+        </div>
+    </header>
+
+    <h1>Reportes del sistema</h1>
+    <div class="reportar">
+        <form class="reportarMain">
+            <label for="reporte">¿Encontraste un problema?Cuéntanos qué ocurrió</label>
+
+            <textarea id="reporte" rows="6" placeholder="Describe el problema con el mayor detalle posible..."></textarea>
+
+            <button type="button" onclick="window.location.href='./infoExito.html'">Enviar</button>
+        </form>
+        <img src="../media/Caricatura logo.png" alt="caricatura del logo en la pagina reporat">
+    </div>
+    <p class="finalMesage">solucionaremos el problema lo antes posible, muy pronot nos pondremos en contacto con usted</p>
+
+    <div class="logoutPanel">
+        <div class="infoPerfil">
+            <img src="../media/pp.png" alt="foto de perfil de usuario">
+            <div>
+                <h4>Pedro Gomez</h4>
+                <h3>Pedro Felipe Gomez Bonilla</h3 >
+            </div>
+        </div>
+
+        <div class="options">
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuraciones</a>
+            <a href="#"><i class="fa-solid fa-bell"></i>Notificaciones</a>
+            <hr>
+            <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i>Cambiar de cuenta</a>
+            <a href="#"><i class="fa-solid fa-moon"></i>Tema oscuro</a>
+        </div>
+
+        <div class="log">
+            <a href="../index.html" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar cesion</a>
+            <a href="#" class="btn"><i class="fa-solid fa-user-plus"></i>Añadir Cuenta</a>
+        </div>
+    </div>
+</body>
+</html>

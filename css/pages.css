@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-bottom: 2px solid #AAAAAA;
+}
+
+.tresQuintos{
+    grid-column: 2/5;
+    justify-content: space-around;
+}
+
+.dosQuintos{
+    grid-column: 6/9;
+    justify-content: space-around;
+}
+
+header label{
+    grid-column: 5/6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 30px ;
+}
+
+.perfil{
+    grid-column: 9/10;
+    justify-self: end;
+    align-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10px;
+}
+
+.perfil img{
+    width: 35px;
+}
+
+nav{
+    display: flex;
+}
+
+i{
+    margin-right: 10px;
+}
+
+.orange{
+    color: #ff721b;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+}
+
+/*--------------CODIGO DEL MAIN--------------*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+form{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 2px solid rgb(230, 230, 230);
+    border-radius: 20px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+@media (max-width:500px) {
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input,
+    form select,
+    form textarea{
+        width: 250px;
+    }
+}
+
+.divInput{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.indicador{
+    grid-column: 1/3;
+}
+
+.descripcion{
+    grid-column: 1/3;
+}
+
+main label{
+    margin-left: 5px;
+}
+
+form input,
+form select,
+form textarea{
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid rgb(95, 95, 95);
+}
+
+form textarea{
+    resize: vertical;
+}
+
+
+button{
+    margin-left: 85px;
+    margin-right: 85px;
+
+    width: 80px;
+    padding: 10px;
+    background: #ff721b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.08);
+    background-color: #c95a16;
+}
+
+/* CODIFO DE LA PANTALLA ELIMINAR*/
+
+.buscar {
+    position: relative;
+    width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 30px;
+}
+
+@media (max-width: 965px) {
+    .buscar {
+        width: 600px;
+    }
+}
+
+@media (max-width: 640px) {
+    .buscar {
+        width: 300px;
+    }
+}
+
+.buscar input {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.buscar input:focus {
+    border-color: #ff721b;
+}
+
+.buscar .icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    color: #777;
+}
+
+.eliminarMain{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    max-width: 1000px;
+    gap: 10px;
+}
+
+
+.eliminar{
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+    width:auto;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.targeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    padding: 5px;
+
+}
+
+h3{
+    width: 100%;
+    margin-bottom: 5px;
+    border-bottom: 2px solid rgb(136, 136, 136);
+}
+
+p{
+    color: #797979;
+}
+
+.modelado{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(184, 184, 184);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    transition: ease 0.3s;
+}
+
+.modelado:hover{
+    transform: scale(1.05);
+}
+
+.checkTargeta:checked + .modelado{
+    border: 3px solid rgb(255, 0, 0);
+    background-color: rgba(255, 17, 0, 0.151);
+}
+
+.logoutPanel{
+    opacity: 0;
+    pointer-events: none;
+
+    transform-origin: top right;
+    transform: scale(0);
+
+    background-color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+
+    padding: 15px;
+    right: 15px;
+    top: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: ease 0.3s;
+}
+
+.logoutPanel h3{
+    letter-spacing: normal;
+    width: auto;
+    margin-bottom: 0;
+    border-bottom: none;
+    color: #777;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.logoutPanel a{
+    text-decoration: none;
+    color: black;
+    align-self: center;
+    transition: ease 0.1s;
+    font-weight: normal;
+}
+
+.logoutPanel a:hover{
+    transform: scale(1.08);
+}
+
+.logoutPanel .infoPerfil{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoutPanel h4{
+    font-size: 20px;
+}
+
+.log{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.logoutPanel .options{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    margin-left: 15px;
+    justify-content: start;
+    gap: 10px;
+}
+
+i{
+    margin-right: 5px;
+}
+
+.logoutPanel .btn{
+    background-color: #ff721b;
+    width: 90%;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: ease 0.1s;
+}
+
+.logoutPanel .btn:hover{
+    background-color: #b65112;
+    transform: scale(1.08);
+}
+
+#logOut:checked ~ .logoutPanel{
+    opacity: 1;
+    top: 80px;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+/*CODIGO DE LA PAGINA DE AYUDA*/
+
+
+.serchPanel{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  4fr 1fr;
+    gap: 5px;
+}
+
+.serchPanel input{
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #cecece;
+}
+
+.serchPanel input[type="button"]{
+    background-color: #ff721b;
+    color: white;
+}
+
+.serchPanel input[type="text"]{
+    width: 100%;
+}
+
+.conteinertargetaAyuda{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.targetaAyuda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+
+    background-color: #fc8942;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.targetaAyuda:hover{
+    transform: scale(1.05);
+}
+
+.targetaAyuda i{
+    color: white;
+    margin: 5px;
+    font-size: 50px;
+}
+
+.targetaAyuda h3{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    border-bottom: 3px solid #79360d;
+}
+
+main h2{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.targetaAyuda p{
+    color: #79360d;
+    padding: 10px;
+    text-align: center;
+}
+
+.p_pregunta{
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.contactarFormas{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width:850px) {
+    .contactarFormas{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (max-width:430px) {
+    .contactarFormas{
+        grid-template-columns: auto;
+    }
+}
+
+/*CODIGO DE LA PAGUNA REPORTAR*/
+
+.reportar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: center;
+
+    border: 2px solid  rgba(129, 129, 129, 0.315);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+    width: 600px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.reportar form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+
+    box-shadow: none;
+    border: none;
+}
+
+.reportar textarea{
+    width: 90%;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+}
+
+.reportar label{
+    width: 200px;
+    text-align: center;
+}
+
+.reportar img{
+    position: absolute;
+    height: 300px;
+    right: -50px;
+}
+
+h1{
+    text-align: center;
+}
+.finalMesage{
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:790px) {
+    .reportar{
+        justify-content: center;
+        width: auto;
+    }
+    .reportar img{
+        right: 0;
+        display: none;
+    }
+}
+
+/* CODIGO DE LOS PLANES DE SERVICIO */
+
+.servicePlans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.planCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.planCard h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.planCard p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.planCard .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff721b;
+    margin-bottom: 15px;
+}
+
+.planCard button {
+    padding: 10px 20px;
+    background-color: #ff721b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.planCard button:hover {
+    background-color: #c95a16;
+    transform: scale(1.05);
+}
+
+.planCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.planCard.basic {
+    background-color: #f0f0f0;
+}
+
+.planCard.pro {
+    background-color: #e0f7fa;
+}
+
+.planCard.premium {
+    background-color: #fff3e0;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./media/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/celulares.css">
+
+
+    <title>index</title>
+    <meta name="description" content="pagina diseñada para el skill de html y css de campus lands" />
+    <meta name="author" content="Juan Felix y Nicolas Chacon" />
+    <meta name="robots" content="index, follow" />
+
+</head>
+<body>
+    <input type="radio" name="screen" id="formLogin" checked>
+    <input type="radio" name="screen" id="exitoLogin">
+
+    <!--PANTALLAS DE CARGA-->
+    <div class="position logo">
+        <label for="formLogin"><img src="./media/kario sin kairo.svg" alt="icno de kairo"></label>
+    </div>
+    
+    <div class="position panelLogin">
+        <form action="#">
+            <div class="logoPanel">
+                <img src="./media/kario sin kairo.svg" alt="icono de kairo media">
+                <h3>MEDIA</h3>
+            </div>
+
+            <h1>Bienvenido al panel digital de KAIRO media</h1>
+            <p>por favor ingresar los siguinete datos para ingresar a la plataorma</p>
+            
+            <label for="usuario">
+                <span>Usuario</span>
+                <input type="text" id="usario" name="usario" required>
+            </label>
+            <label for="contraseña">
+                <span>Contraseña</span>
+                <input type="password" id="contraseña" name="contraseña" required>
+            </label>
+            <label for="exitoLogin" class="btn">Ingresar al panel</label>
+            <p class="mensajefinal">tiene problemas para ingresar? por favor contactarse con asitente tecnico lo mas printo posible</p>
+        </form>
+    </div>
+
+    <div class="position ingresoExitoso">
+        <label for="formLogin" onclick="setTimeout(() => {window.location.href='./pages/tabla.html'}, 2000)">
+            <div class="logoPanel">
+                <img src="./media/kario sin kairo.svg" alt="icono de kairo">
+                <h3>MEDIA</h3>
+            </div>
+            <h1>Bienvenido de nuevo</h1>
+            <img class="user" src="./media/pp.png" alt="usuario">
+            <h1>Pedro Felipe Gomez Bonilla</h1>
+            <p>usuario administrador</p>
+        </label>
+    </div>
+</body>
+</html>

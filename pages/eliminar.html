@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../media/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../media/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/celulares.css">
+    
+    <title>Eliminar</title>
+    <meta name="description" content="pagina diseñada para el skill de html y css de campus lands" />
+    <meta name="author" content="Juan Felix y Nicolas Chacon" />
+    <meta name="robots" content="index, follow" />
+</head>
+<body>
+    <input type="checkbox" name="logOut" id="logOut">
+    <header>
+            <nav class="tresQuintos">
+                <a href="./añadir.html"><i class="fa-solid fa-circle-plus orange"></i>Añadir</a>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-right orange"></i>Refrescar</a>
+                <a href="#"><i class="fa-solid fa-trash orange"></i>Eliminar</a>
+            </nav>
+            <label class="añadirEliminarLable" onclick="window.location.href='./tabla.html'" for="sideBar"><img class="logo" src="../media/kario sin kairo.svg" alt="logo de la empresa"></label>
+            <nav class="dosQuintos">
+                <a href="./reportar.html"><i class="fa-solid fa-bug orange"></i>Reportar</a>
+                <a href="./ayuda.html"><i class="fa-solid fa-circle-question orange"></i>Ayuda</a>
+                <a href="./servicios.html"><i class="fa-solid fa-circle-question orange"></i>Servicios</a>
+            </nav>
+            <div class="perfil">
+                <i class="fa-solid fa-gear"></i>
+                <i class="fa-solid fa-bell"></i>
+                <label for="logOut"><img src="../media/pp.png" alt="imagen de foto de perfil de usuario"></label>
+            </div>
+    </header>
+    
+    <main >
+        <h1>Eliminar</h1>
+
+        <div class="buscar">
+            <input type="search" placeholder="Buscar..." />
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+        </div>
+
+        <div class="eliminarMain">
+            <input class="checkTargeta" type="checkbox" id="t1">
+            <label class="modelado" for="t1">
+            <div class="targeta">
+                <h3 class="primero indicador">Modelado 3D</h3>
+                <p class="indicador">Interés por diseño y visualización 3D para proyectos arquitectónicos y de producto, con renders realistas, prototipado y presentaciones profesionales.</p>
+            </div>
+            </label>
+
+            <input class="checkTargeta" type="checkbox" id="t2">
+            <label class="modelado" for="t2">
+            <div class="targeta">
+                <h3 class="primero indicador">Finca Galeon</h3>
+                <p class="indicador">Diseño de maqueta y propuesta del proyecto, incluyendo distribución de espacios, zonas verdes, recorrido del visitante y una identidad visual coherente.</p>
+            </div>
+            </label>
+
+            <input class="checkTargeta" type="checkbox" id="t3">
+            <label class="modelado" for="t3">
+            <div class="targeta">
+                <h3 class="primero indicador">Colegios privados</h3>
+                <p class="indicador">Se busca llegar a directivos y padres de familia con una propuesta educativa clara: calidad académica, acompañamiento, innovación y comunicación efectiva.</p>
+            </div>
+            </label>
+
+            <input class="checkTargeta" type="checkbox" id="t4">
+            <label class="modelado" for="t4">
+            <div class="targeta">
+                <h3 class="primero indicador">Electrodometicos</h3>
+                <p class="indicador">Venta de electrodomésticos para el hogar con promociones y opciones de pago, destacando garantía, servicio postventa y recomendaciones según necesidad del cliente.</p>
+            </div>
+            </label>
+
+            <input class="checkTargeta" type="checkbox" id="t5">
+            <label class="modelado" for="t5">
+            <div class="targeta">
+                <h3 class="primero indicador">Estrato 2 -Florida Blanca</h3>
+                <p class="indicador">Impacto en los sectores de estrato 2 en Floridablanca con soluciones accesibles, mensajes directos y campañas enfocadas en necesidades reales del barrio.</p>
+            </div>
+            </label>
+
+            <input class="checkTargeta" type="checkbox" id="t6">
+            <label class="modelado" for="t6">
+            <div class="targeta">
+                <h3 class="primero indicador">Jovenes en accion</h3>
+                <p class="indicador">Impacto en beneficiarios de Jóvenes en Acción mediante orientación, difusión de oportunidades, acompañamiento en procesos y apoyo en formación y empleabilidad.</p>
+            </div>
+            </label>
+        </div>
+
+        
+        <button class="eliminar" onclick="window.location.href='./infoExito.html'"><i class="fa-solid fa-trash"></i>Eliminar</button>
+        
+    </main>
+    <div class="logoutPanel">
+        <div class="infoPerfil">
+            <img src="../media/pp.png" alt="foto de perfil de usuario">
+            <div>
+                <h4>Pedro Gomez</h4>
+                <h3>Pedro Felipe Gomez Bonilla</h3 >
+            </div>
+        </div>
+
+        <div class="options">
+            <a href="#"><i class="fa-solid fa-gear"></i>Configuraciones</a>
+            <a href="#"><i class="fa-solid fa-bell"></i>Notificaciones</a>
+            <hr>
+            <a href="./reportar.html"><i class="fa-solid fa-bug orange"></i>Reportar</a>
+            <a href="./ayuda.html"><i class="fa-solid fa-circle-question orange"></i>Ayuda</a>
+        </div>
+
+        <div class="log">
+            <a href="../index.html" class="btn"><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar cesion</a>
+            <a href="#" class="btn"><i class="fa-solid fa-user-plus"></i>Añadir Cuenta</a>
+        </div>
+    </div>
+</body>
+</html>
